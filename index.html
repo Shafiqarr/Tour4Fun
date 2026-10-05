@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour4Fun</title>
+
+    <!-- JQuery Mobile CSS -->
+    <link rel="stylesheet"
+        href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!-- JQuery & JQuery Mobile -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <div data-role="page" id="homePage">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Tour4Fun</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div data-role="navbar">
+            <ul>
+
+                <li>
+                    <a href="#homePage"
+                        class="ui-btn-active"
+                        data-icon="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#packages"
+                        data-icon="shop">
+                        Packages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#booking"
+                        data-icon="calendar">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact"
+                        data-icon="phone">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div data-role="content">
+
+            <h2>Welcome to Tour4Fun!</h2>
+
+            <p>
+                Explore beautiful destinations around the world
+                and book your perfect holiday package with us.
+            </p>
+
+            <h3>Our Best Choices</h3>
+
+            <!-- Card Grid -->
+            <div class="card-grid">
+
+                <!-- Card 1 -->
+                <div class="card">
+
+                    <img src="img/kuching.jpg"
+                        alt="Kuching">
+
+                    <h3>Kuching</h3>
+
+                    <p>
+                        The vibrant capital of Sarawak, known for its rich culture, historic landmarks, beautiful waterfront and diverse wildlife.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="card">
+
+                    <img src="img/Sibu.jpg"
+                        alt="Sibu">
+
+                    <h3>Sibu</h3>
+
+                    <p>
+                        A charming riverside city known for its multicultural heritage, bustling markets, local cuisine and unique Foochow culture.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="card">
+
+                    <img src="img/bintulu.jpg"
+                        alt="Bintulu">
+
+                    <h3>Bintulu</h3>
+
+                    <p>
+                        An industrial and coastal city offering scenic beaches, nature parks and opportunities to experience Sarawak's natural beauty.
+                    </p>
+
+                </div>
+
+               
+                <!-- Card 4 -->
+                <div class="card">
+
+                    <img src="img/miri.jpg"
+                        alt="Miri">
+
+                    <h3>Miri</h3>
+
+                    <p>
+                        A lively coastal city famous for its oil heritage, beautiful beaches, national parks and natural attractions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <a href="#packages"
+                class="ui-btn ui-corner-all ui-btn-b">
+                Explore Tour Packages
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer">
+
+            <h4 class="footer-text">
+                &copy; 2026 Tour4Fun
+            </h4>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOUR PACKAGES PAGE ================= -->
+
+    <div data-role="page" id="packages">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+
+            <a href="#homePage"
+                data-icon="home"
+                data-iconpos="notext">
+            </a>
+
+            <h1>Tour Packages</h1>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div data-role="navbar">
+
+            <ul>
+
+                <li>
+                    <a href="#homePage"
+                        data-icon="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#packages"
+                        class="ui-btn-active"
+                        data-icon="shop">
+                        Packages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#booking"
+                        data-icon="calendar">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact"
+                        data-icon="phone">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Package Content -->
+        <div data-role="content">
+
+            <h2>Our Tour Packages</h2>
+
+            <p>
+                Choose from our available tour packages.
+                Click the information button for more details.
+            </p>
+
+
+            <!-- Package 1 -->
+            <div class="package-card">
+
+                <img src="img/kuching.jpg"
+                    alt="Kuching">
+
+                <h3>Kuching</h3>
+
+                <p>
+                    Explore the cultural and historical attractions
+                    of Malaysia.
+                </p>
+
+                
+
+                <!-- Popover -->
+                <a href="#kuchingPopup"
+                    data-rel="popup"
+                    data-position-to="window"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- Package 2 -->
+            <div class="package-card">
+
+                <img src="img/Sibu.jpg"
+                    alt="Sibu Tour">
+
+                <h3>Sibu Tour</h3>
+
+                <p>
+                    Experience the beautiful culture, food and attractions of Sibu.
+                </p>
+
+                
+
+                <!-- Popover -->
+                <a href="#sibuPopup"
+                    data-rel="popup"
+                    data-position-to="window"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- Package 3 -->
+            <div class="package-card">
+
+                <img src="img/bintulu.jpg"
+                    alt="Miri Tour">
+
+                <h3>Bintulu Tour</h3>
+
+                <p>
+                    Relax and enjoy the beautiful beaches and
+                    activities.
+                </p>
+
+                
+
+                <!-- Popover -->
+                <a href="#bintuluPopup"
+                    data-rel="popup"
+                    data-position-to="window"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- Package 4 -->
+            <div class="package-card">
+
+                <img src="img/miri.jpg"
+                    alt="Miri Tour">
+
+                <h3>Miri Tour</h3>
+
+                <p>
+                    Discover modern cities, Miri culture and beautiful tourist attractions.
+                </p>
+
+                
+
+                <!-- Popover -->
+                <a href="#sibuPopup"
+                    data-rel="popup"
+                    data-position-to="window"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- ================= POPUPS ================= -->
+
+            <!-- Kuching Popup -->
+            <div data-role="popup"
+                id="kuchingPopup"
+                data-overlay-theme="b"
+                data-dismissible="true"
+                class="package-popup">
+
+                <h3>Kuching Heritage Tour</h3>
+
+                <p>
+                    <strong>Destinations:</strong>
+                    Kuching Waterfront, Sarawak Cultural Village, Semenggoh Nature Reserve.
+                </p>
+
+                <p>
+                    <strong>Activities:</strong>
+                    City sightseeing, cultural explorations
+                    and photography.
+                </p>
+
+                <p>
+                    <strong>Facilities:</strong>
+                    Transportation, hotel, and tour guide.
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    3 days, 2 nights
+                </p>
+
+                <p>
+                    <strong>Price:</strong>
+                    RM350
+                </p>
+
+                <a href="#"
+                    data-rel="back"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    Close
+                </a>
+
+            </div>
+
+
+            <!-- Miri Popup -->
+            <div data-role="popup"
+                id="miriPopup"
+                data-overlay-theme="b"
+                data-dismissible="true"
+                class="package-popup">
+
+                <h3>Miri Tour</h3>
+
+                <p>
+                    <strong>Destinations:</strong>
+                    Canada Hill, Niah National Park, Miri City Fan.
+                </p>
+
+                <p>
+                    <strong>Activities:</strong>
+                    Nature exploration, cave exploration, sightseeing and cultural experience.
+                </p>
+
+                <p>
+                    <strong>Facilities:</strong>
+                    Transportation, hotel and tour guide.
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    2 days, 1 night
+                </p>
+
+                <p>
+                    <strong>Price:</strong>
+                    RM250
+                </p>
+
+                <a href="#"
+                    data-rel="back"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    Close
+                </a>
+
+            </div>
+
+
+            <!-- Bintulu Popup -->
+            <div data-role="popup"
+                id="bintuluPopup"
+                data-overlay-theme="b"
+                data-dismissible="true"
+                class="package-popup">
+
+                <h3>Bintulu Tour</h3>
+
+                <p>
+                    <strong>Destinations:</strong>
+                    Tanjung Batu Beach, Bintulu Promenade, Similajau National Park.
+                </p>
+
+                <p>
+                    <strong>Activities:</strong>
+                    Beach recreation, sightseeing, jungle trekking and nature exploration.
+                </p>
+
+                <p>
+                    <strong>Facilities:</strong>
+                    Transportation, hotel and tour guide.
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    3 days, 2 nights
+                </p>
+
+                <p>
+                    <strong>Price:</strong>
+                    RM350
+                </p>
+
+                <a href="#"
+                    data-rel="back"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    Close
+                </a>
+
+            </div>
+
+
+            <!-- Sibu Popup -->
+            <div data-role="popup"
+                id="sibuPopup"
+                data-overlay-theme="b"
+                data-dismissible="true"
+                class="package-popup">
+
+                <h3>Sibu Tour</h3>
+
+                <p>
+                    <strong>Destinations:</strong>
+                    Sibu Central Market, Sibu Esplanade, Sibu Heritage Centre.
+                </p>
+
+                <p>
+                    <strong>Activities:</strong>
+                    Cultural experience, local food tasting, sightseeing and shopping.
+                </p>
+
+                <p>
+                    <strong>Facilities:</strong>
+                    Transportation, hotel and tour guide.
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    2 days, 1 night
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    RM250
+                </p>
+
+                <a href="#"
+                    data-rel="back"
+                    class="ui-btn ui-corner-all ui-btn-b">
+                    Close
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div data-role="footer">
+
+            <h4 class="footer-text">
+                &copy; 2026 Tour4Fun
+            </h4>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOOKING PAGE ================= -->
+
+    <div data-role="page" id="booking">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+
+            <a href="#homePage"
+                data-icon="home"
+                data-iconpos="notext">
+            </a>
+
+            <h1>Booking</h1>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div data-role="navbar">
+
+            <ul>
+
+                <li>
+                    <a href="#homePage"
+                        data-icon="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#packages"
+                        data-icon="shop">
+                        Packages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#booking"
+                        class="ui-btn-active"
+                        data-icon="calendar">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact"
+                        data-icon="phone">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Booking Content -->
+        <div data-role="content">
+
+            <h2>Book Your Tour</h2>
+
+            <p>
+                Please fill in all the information below.
+            </p>
+
+
+            <!-- Booking Form -->
+            <form id="bookingForm">
+
+                <!-- Name -->
+                <label for="customerName">
+                    Name:
+                </label>
+
+                <input type="text"
+                    id="customerName"
+                    name="customerName"
+                    placeholder="Enter your name">
+
+
+                <!-- Phone -->
+                <label for="phone">
+                    Phone Number:
+                </label>
+
+                <input type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number">
+
+
+                <!-- Email -->
+                <label for="bookingEmail">
+                    Email:
+                </label>
+
+                <input type="email"
+                    id="bookingEmail"
+                    name="bookingEmail"
+                    placeholder="you@example.com">
+
+
+                <!-- Travel Date -->
+                <label for="travelDate">
+                    Travel Date:
+                </label>
+
+                <input type="date"
+                    id="travelDate"
+                    name="travelDate">
+
+
+                <!-- Participants -->
+                <label for="participants">
+                    Number of Participants:
+                </label>
+
+                <input type="number"
+                    id="participants"
+                    name="participants"
+                    min="1"
+                    placeholder="Number of participants">
+
+
+                <!-- Tour Package -->
+                <label for="tourPackage">
+                    Tour Package:
+                </label>
+
+                <select id="tourPackage"
+                    name="tourPackage">
+
+                    <option value="">
+                        Select a package
+                    </option>
+
+                    <option value="Kuching">
+                        Kuching Tour
+                    </option>
+
+                    <option value="Miri">
+                        Sibu Tour
+                    </option>
+
+                    <option value="Bintulu">
+                        Bintulu Tour
+                    </option>
+
+                    <option value="Sibu">
+                        Miri Tour
+                    </option>
+
+                </select>
+
+
+                <input type="submit"
+                    value="Submit Booking"
+                    data-theme="b">
+
+            </form>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div data-role="footer">
+
+            <h4 class="footer-text">
+                &copy; 2026 Tour4Fun
+            </h4>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONTACT PAGE ================= -->
+
+    <div data-role="page" id="contact">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+
+            <a href="#homePage"
+                data-icon="home"
+                data-iconpos="notext">
+            </a>
+
+            <h1>Contact Us</h1>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div data-role="navbar">
+
+            <ul>
+
+                <li>
+                    <a href="#homePage"
+                        data-icon="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#packages"
+                        data-icon="shop">
+                        Packages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#booking"
+                        data-icon="calendar">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact"
+                        class="ui-btn-active"
+                        data-icon="phone">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!--Contact Content-->
+        <div data-role="content">
+            <h2>Get in touch with us</h2>
+            <p>We'd love to hear from you! Please fill out the form below.</p>
+
+            <!--Contact Form-->
+            <form id="contactForm">
+                <label for="name">Name: </label>
+                <input type="text" name="name" placeholder="Your Name">
+
+                <label for="email">Email: </label>
+                <input type="email" email="email" placeholder="you@example.com">
+
+                <label for="phoneNum">Phone Number: </label>
+                <input type="tel" phone number="phoneNum" placeholder="Your Phone Number">
+
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" placeholder="Type your message here....."></textarea>
+
+                <input type="submit" value="Send Message" data-theme="b">
+            </form>
+
+
+            <!-- Footer -->
+            <div data-role="footer">
+
+                <h4 class="footer-text">
+                    &copy; 2026 Tour4Fun
+                </h4>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

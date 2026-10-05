@@ -1,0 +1,184 @@
+/* ================= GENERAL ================= */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* ================= HOME CARD GRID ================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #b33;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* ================= TOUR PACKAGES ================= */
+
+.package-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.package-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.package-card h3 {
+    color: #b33;
+    font-size: 20px;
+}
+
+.package-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* ================= TOOLTIP ================= */
+
+.tooltip {
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: help;
+}
+
+
+/* ================= PACKAGE POPUP ================= */
+
+.package-popup {
+    padding: 15px;
+    width: 85%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.package-popup h3 {
+    color: #b33;
+    margin-top: 0;
+}
+
+.package-popup p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================= BOOKING FORM ================= */
+
+#bookingForm {
+    margin-top: 20px;
+}
+
+#bookingForm input,
+#bookingForm select {
+    margin-bottom: 15px;
+}
+
+
+/* ================= CONTACT FORM ================= */
+
+#contactForm {
+    margin-top: 10px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+}
+
+
+/* ================= CONTACT POPUP ================= */
+
+.contact-popup {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popup-header {
+    background-color: #b33;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.popup-content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+/* ================= ERROR MESSAGE ================= */
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* ================= SUCCESS MESSAGE ================= */
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
